@@ -3,7 +3,7 @@ first AI agent project with scaledown
 
 # 🍽️ Dining Reservation Chatbot (Compressed Menu + Availability Scheduling)
 
-## 📌 Project Overview
+##  Project Overview
 
 The **Dining Reservation Chatbot** is an intelligent restaurant booking assistant designed to streamline table reservations with improved response times.
 
@@ -17,9 +17,9 @@ The chatbot provides instant booking confirmations while reducing latency by min
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-### ✅ Chatbot-Based Reservation Booking
+### Chatbot-Based Reservation Booking
 Users can interact naturally to:
 
 - Book a table
@@ -29,7 +29,7 @@ Users can interact naturally to:
 
 ---
 
-### ✅ Compressed Menu Data
+###  Compressed Menu Data
 Instead of loading the entire restaurant menu every time, the chatbot stores and serves a compressed menu format:
 
 - Menu grouped by categories
