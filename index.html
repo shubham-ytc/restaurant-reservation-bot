@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dining Reservation Chatbot</title>
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Background Header -->
+  <div class="bg-gradient-to-r from-orange-400 to-red-500 py-10 text-center text-white">
+    <h1 class="text-4xl font-bold">Dining Reservation Chatbot</h1>
+    <p class="text-lg mt-2">Book your table instantly 🍽️</p>
+  </div>
+
+  <!-- Chatbot Container -->
+  <div class="flex justify-center mt-10">
+    <div class="w-full max-w-2xl bg-white shadow-xl rounded-2xl overflow-hidden">
+
+      <!-- Chat Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b">
+        <div class="flex items-center gap-4">
+
+          <!-- Bot Avatar -->
+          <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png"
+               class="w-14 h-14 rounded-full"/>
+
+          <div>
+            <h2 class="text-xl font-bold">Restaurant Bot</h2>
+            <p class="text-gray-500 text-sm">Your Reservation Assistant</p>
+          </div>
+        </div>
+
+        <!-- Online Status -->
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+          <p class="text-sm text-gray-600">Online</p>
+        </div>
+      </div>
+
+      <!-- Chat Messages -->
+      <div id="chatBox"
+        class="h-[400px] overflow-y-auto p-6 space-y-4 bg-gray-50">
+
+        <!-- Bot Welcome Message -->
+        <div class="flex items-start gap-2">
+          <div class="bg-gray-200 p-4 rounded-xl max-w-md">
+            <p class="text-gray-800">
+              Welcome! 👋 How can I assist you with your reservation today?
+            </p>
+            <p class="text-xs text-gray-500 mt-1">Bot</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Input Section -->
+      <div class="flex items-center gap-3 p-4 border-t bg-white">
+
+        <!-- Input -->
+        <input id="userInput"
+          type="text"
+          placeholder="Type a message..."
+          class="flex-1 border rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"/>
+
+        <!-- Send Button -->
+        <button onclick="sendMessage()"
+          class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-xl text-lg">
+          ➤
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Chat Logic -->
+  <script>
+
+    // ✅ Send Message Function
+    async function sendMessage() {
+
+      let input = document.getElementById("userInput");
+      let message = input.value.trim();
+
+      if (message === "") return;
+
+      let chatBox = document.getElementById("chatBox");
+
+      // ---------------- USER MESSAGE ----------------
+      chatBox.innerHTML += `
+        <div class="flex justify-end">
+          <div class="bg-green-500 text-white p-4 rounded-xl max-w-md">
+            <p>${message}</p>
+            <p class="text-xs text-white mt-1 text-right">You</p>
+          </div>
+        </div>
+      `;
+
+      input.value = "";
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      // ---------------- BOT TYPING INDICATOR ----------------
+      let typingDiv = document.createElement("div");
+      typingDiv.className = "flex items-start gap-2";
+      typingDiv.innerHTML = `
+        <div class="bg-gray-200 p-4 rounded-xl max-w-md italic text-gray-500">
+          Bot is typing...
+        </div>
+      `;
+      chatBox.appendChild(typingDiv);
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      // ---------------- API CALL TO FLASK BACKEND ----------------
+      try {
+        let response = await fetch("http://127.0.0.1:5000/chat", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ message: message })
+        });
+
+        let data = await response.json();
+
+        // Remove typing indicator
+        typingDiv.remove();
+
+        // ---------------- BOT RESPONSE ----------------
+        chatBox.innerHTML += `
+          <div class="flex items-start gap-2">
+            <div class="bg-gray-200 p-4 rounded-xl max-w-md">
+              <p>${data.reply}</p>
+              <p class="text-xs text-gray-500 mt-1">Bot</p>
+            </div>
+          </div>
+        `;
+
+      } catch (error) {
+
+        typingDiv.remove();
+
+        chatBox.innerHTML += `
+          <div class="flex items-start gap-2">
+            <div class="bg-red-200 p-4 rounded-xl max-w-md">
+              <p>⚠️ Error: Backend server not running.</p>
+            </div>
+          </div>
+        `;
+      }
+
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    // ✅ Press Enter to Send
+    document.getElementById("userInput")
+      .addEventListener("keypress", function(e) {
+        if (e.key === "Enter") sendMessage();
+      });
+
+  </script>
+
+</body>
+</html>

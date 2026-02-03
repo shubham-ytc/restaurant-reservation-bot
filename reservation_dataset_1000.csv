@@ -1,0 +1,1001 @@
+text,intent
+reserve a table for 7,reserve
+no cancel,cancel
+tell me your menu items,get_menu
+reserve a table for 1,reserve
+yes confirm,confirm
+thanks bye,goodbye
+no cancel,cancel
+i need a table for 2 persons,reserve
+no cancel,cancel
+hi,greet
+hi,greet
+what time slots are available,get_slots
+cancel,cancel
+no cancel,cancel
+book a table,reserve
+good evening,greet
+book it,confirm
+good morning,greet
+cancel reservation,cancel
+never mind cancel,cancel
+tell me your menu items,get_menu
+show available timings,get_slots
+book seat for 9 guests,reserve
+good morning,greet
+book seat for 7 guests,reserve
+goodbye,goodbye
+okay confirm booking,confirm
+table booking for 3 people,reserve
+reserve a table for 9,reserve
+book a table,reserve
+hey,greet
+bye,goodbye
+good morning,greet
+available reservation times,get_slots
+never mind cancel,cancel
+when can i come,get_slots
+okay confirm booking,confirm
+hey,greet
+good morning,greet
+what time slots are available,get_slots
+thanks bye,goodbye
+stop booking,cancel
+available reservation times,get_slots
+table booking for 4 people,reserve
+hi,greet
+i want to reserve a table,reserve
+give me food list,get_menu
+what is on the menu,get_menu
+do you have free slots,get_slots
+i want to reserve a table,reserve
+tell me your menu items,get_menu
+good evening,greet
+give me food list,get_menu
+tell me your menu items,get_menu
+what time slots are available,get_slots
+give me food list,get_menu
+never mind cancel,cancel
+table booking for 4 people,reserve
+hello,greet
+give me food list,get_menu
+what time slots are available,get_slots
+yes finalize,confirm
+cancel,cancel
+confirm,confirm
+show available timings,get_slots
+hey,greet
+stop booking,cancel
+yes confirm,confirm
+see you,goodbye
+cancel,cancel
+goodbye,goodbye
+menu please,get_menu
+i want dinner reservation for 10,reserve
+show me the menu,get_menu
+sure confirm it,confirm
+do you have free slots,get_slots
+bye,goodbye
+see you,goodbye
+sure confirm it,confirm
+available reservation times,get_slots
+yes confirm,confirm
+bye,goodbye
+when can i come,get_slots
+give me food list,get_menu
+menu please,get_menu
+do you have free slots,get_slots
+give me food list,get_menu
+tell me available slots,get_slots
+when can i come,get_slots
+when can i come,get_slots
+what dishes do you have,get_menu
+book it,confirm
+reserve a table for 8,reserve
+exit,goodbye
+good morning,greet
+table booking for 1 people,reserve
+see you,goodbye
+tell me available slots,get_slots
+show me the menu,get_menu
+when can i come,get_slots
+goodbye,goodbye
+good evening,greet
+table booking for 2 people,reserve
+goodbye,goodbye
+i want dinner reservation for 8,reserve
+what is on the menu,get_menu
+tell me your menu items,get_menu
+hey,greet
+good evening,greet
+book a table,reserve
+menu please,get_menu
+never mind cancel,cancel
+never mind cancel,cancel
+exit,goodbye
+menu please,get_menu
+yes finalize,confirm
+dont book,cancel
+cancel reservation,cancel
+hello,greet
+show me the menu,get_menu
+okay confirm booking,confirm
+what time slots are available,get_slots
+available reservation times,get_slots
+menu please,get_menu
+bye,goodbye
+reserve a table for 10,reserve
+i want to reserve a table,reserve
+available reservation times,get_slots
+confirm,confirm
+confirm,confirm
+reserve a table for 6,reserve
+when can i come,get_slots
+confirm,confirm
+okay confirm booking,confirm
+bye,goodbye
+bye,goodbye
+can you book a table for 8 people,reserve
+exit,goodbye
+when can i come,get_slots
+hi,greet
+confirm,confirm
+can you book a table for 2 people,reserve
+book it,confirm
+what dishes do you have,get_menu
+thanks bye,goodbye
+yes confirm,confirm
+table booking for 3 people,reserve
+yes confirm,confirm
+okay confirm booking,confirm
+see you,goodbye
+menu please,get_menu
+show available timings,get_slots
+hi,greet
+dont book,cancel
+show me the menu,get_menu
+good morning,greet
+cancel,cancel
+when can i come,get_slots
+stop booking,cancel
+i want to reserve a table,reserve
+yes confirm,confirm
+see you,goodbye
+book a table,reserve
+dont book,cancel
+good evening,greet
+menu please,get_menu
+tell me your menu items,get_menu
+book a table,reserve
+tell me available slots,get_slots
+exit,goodbye
+hello,greet
+hey,greet
+see you,goodbye
+give me food list,get_menu
+show me the menu,get_menu
+good morning,greet
+good morning,greet
+reserve a table for 4,reserve
+hey,greet
+goodbye,goodbye
+table booking for 3 people,reserve
+what is on the menu,get_menu
+tell me your menu items,get_menu
+yes confirm,confirm
+hey,greet
+hey,greet
+hi,greet
+hi,greet
+thanks bye,goodbye
+thanks bye,goodbye
+i need a table for 9 persons,reserve
+confirm,confirm
+goodbye,goodbye
+bye,goodbye
+show me the menu,get_menu
+good evening,greet
+dont book,cancel
+show available timings,get_slots
+stop booking,cancel
+good morning,greet
+confirm,confirm
+tell me your menu items,get_menu
+good morning,greet
+hi,greet
+good evening,greet
+what time slots are available,get_slots
+goodbye,goodbye
+menu please,get_menu
+give me food list,get_menu
+show me the menu,get_menu
+give me food list,get_menu
+never mind cancel,cancel
+sure confirm it,confirm
+show me the menu,get_menu
+book it,confirm
+available reservation times,get_slots
+can you book a table for 4 people,reserve
+cancel reservation,cancel
+stop booking,cancel
+show me the menu,get_menu
+show available timings,get_slots
+do you have free slots,get_slots
+hey,greet
+show available timings,get_slots
+reserve a table for 9,reserve
+dont book,cancel
+hello,greet
+give me food list,get_menu
+never mind cancel,cancel
+exit,goodbye
+see you,goodbye
+book it,confirm
+table booking for 2 people,reserve
+tell me available slots,get_slots
+dont book,cancel
+yes confirm,confirm
+yes finalize,confirm
+stop booking,cancel
+tell me your menu items,get_menu
+menu please,get_menu
+reserve a table for 3,reserve
+table booking for 4 people,reserve
+dont book,cancel
+when can i come,get_slots
+reserve a table for 6,reserve
+book it,confirm
+stop booking,cancel
+give me food list,get_menu
+good evening,greet
+tell me available slots,get_slots
+thanks bye,goodbye
+okay confirm booking,confirm
+what is on the menu,get_menu
+goodbye,goodbye
+confirm,confirm
+hello,greet
+confirm,confirm
+goodbye,goodbye
+book it,confirm
+when can i come,get_slots
+yes confirm,confirm
+reserve a table for 6,reserve
+hey,greet
+confirm,confirm
+i want dinner reservation for 7,reserve
+available reservation times,get_slots
+hey,greet
+book a table,reserve
+see you,goodbye
+book it,confirm
+what dishes do you have,get_menu
+good morning,greet
+thanks bye,goodbye
+tell me your menu items,get_menu
+hello,greet
+what is on the menu,get_menu
+give me food list,get_menu
+yes confirm,confirm
+tell me available slots,get_slots
+okay confirm booking,confirm
+never mind cancel,cancel
+never mind cancel,cancel
+tell me your menu items,get_menu
+available reservation times,get_slots
+stop booking,cancel
+confirm,confirm
+stop booking,cancel
+no cancel,cancel
+stop booking,cancel
+what time slots are available,get_slots
+exit,goodbye
+what time slots are available,get_slots
+reserve a table for 1,reserve
+bye,goodbye
+when can i come,get_slots
+confirm,confirm
+show me the menu,get_menu
+book it,confirm
+reserve a table for 10,reserve
+good morning,greet
+tell me your menu items,get_menu
+bye,goodbye
+cancel,cancel
+hello,greet
+yes finalize,confirm
+bye,goodbye
+exit,goodbye
+dont book,cancel
+what dishes do you have,get_menu
+book it,confirm
+tell me available slots,get_slots
+can you book a table for 2 people,reserve
+bye,goodbye
+cancel reservation,cancel
+what time slots are available,get_slots
+yes finalize,confirm
+dont book,cancel
+reserve a table for 2,reserve
+i want dinner reservation for 2,reserve
+book a table,reserve
+give me food list,get_menu
+book seat for 2 guests,reserve
+tell me available slots,get_slots
+stop booking,cancel
+hello,greet
+see you,goodbye
+hey,greet
+do you have free slots,get_slots
+what is on the menu,get_menu
+show available timings,get_slots
+bye,goodbye
+give me food list,get_menu
+do you have free slots,get_slots
+what dishes do you have,get_menu
+hi,greet
+menu please,get_menu
+bye,goodbye
+good morning,greet
+show me the menu,get_menu
+no cancel,cancel
+hi,greet
+cancel,cancel
+thanks bye,goodbye
+dont book,cancel
+show available timings,get_slots
+hey,greet
+i need a table for 4 persons,reserve
+book it,confirm
+menu please,get_menu
+what is on the menu,get_menu
+what is on the menu,get_menu
+available reservation times,get_slots
+sure confirm it,confirm
+see you,goodbye
+yes confirm,confirm
+good morning,greet
+hi,greet
+cancel,cancel
+dont book,cancel
+i need a table for 4 persons,reserve
+no cancel,cancel
+dont book,cancel
+do you have free slots,get_slots
+exit,goodbye
+dont book,cancel
+dont book,cancel
+good evening,greet
+show available timings,get_slots
+tell me your menu items,get_menu
+good evening,greet
+menu please,get_menu
+hello,greet
+give me food list,get_menu
+available reservation times,get_slots
+what is on the menu,get_menu
+thanks bye,goodbye
+stop booking,cancel
+cancel reservation,cancel
+hello,greet
+confirm,confirm
+what is on the menu,get_menu
+see you,goodbye
+tell me available slots,get_slots
+bye,goodbye
+no cancel,cancel
+can you book a table for 8 people,reserve
+stop booking,cancel
+book a table,reserve
+available reservation times,get_slots
+give me food list,get_menu
+what time slots are available,get_slots
+i want to reserve a table,reserve
+bye,goodbye
+cancel,cancel
+thanks bye,goodbye
+cancel,cancel
+yes finalize,confirm
+no cancel,cancel
+reserve a table for 9,reserve
+thanks bye,goodbye
+book seat for 3 guests,reserve
+show available timings,get_slots
+when can i come,get_slots
+never mind cancel,cancel
+exit,goodbye
+exit,goodbye
+what dishes do you have,get_menu
+book it,confirm
+table booking for 9 people,reserve
+okay confirm booking,confirm
+goodbye,goodbye
+table booking for 6 people,reserve
+when can i come,get_slots
+give me food list,get_menu
+what dishes do you have,get_menu
+bye,goodbye
+yes finalize,confirm
+i want to reserve a table,reserve
+dont book,cancel
+tell me available slots,get_slots
+yes finalize,confirm
+cancel reservation,cancel
+see you,goodbye
+yes confirm,confirm
+can you book a table for 10 people,reserve
+cancel reservation,cancel
+book it,confirm
+reserve a table for 1,reserve
+yes finalize,confirm
+thanks bye,goodbye
+what time slots are available,get_slots
+what dishes do you have,get_menu
+hello,greet
+menu please,get_menu
+book it,confirm
+hi,greet
+confirm,confirm
+hello,greet
+confirm,confirm
+hi,greet
+tell me your menu items,get_menu
+do you have free slots,get_slots
+see you,goodbye
+what dishes do you have,get_menu
+table booking for 4 people,reserve
+good morning,greet
+bye,goodbye
+table booking for 2 people,reserve
+bye,goodbye
+give me food list,get_menu
+tell me available slots,get_slots
+goodbye,goodbye
+thanks bye,goodbye
+good morning,greet
+tell me your menu items,get_menu
+tell me your menu items,get_menu
+good morning,greet
+bye,goodbye
+confirm,confirm
+what time slots are available,get_slots
+never mind cancel,cancel
+book a table,reserve
+give me food list,get_menu
+give me food list,get_menu
+what time slots are available,get_slots
+hello,greet
+i want dinner reservation for 2,reserve
+book it,confirm
+see you,goodbye
+goodbye,goodbye
+table booking for 4 people,reserve
+confirm,confirm
+hi,greet
+exit,goodbye
+yes finalize,confirm
+do you have free slots,get_slots
+when can i come,get_slots
+yes confirm,confirm
+table booking for 7 people,reserve
+dont book,cancel
+hi,greet
+goodbye,goodbye
+hi,greet
+stop booking,cancel
+good evening,greet
+yes finalize,confirm
+what time slots are available,get_slots
+reserve a table for 1,reserve
+i need a table for 1 persons,reserve
+what time slots are available,get_slots
+i want to reserve a table,reserve
+show me the menu,get_menu
+do you have free slots,get_slots
+book seat for 5 guests,reserve
+stop booking,cancel
+give me food list,get_menu
+good morning,greet
+book a table,reserve
+hey,greet
+give me food list,get_menu
+do you have free slots,get_slots
+good morning,greet
+what dishes do you have,get_menu
+never mind cancel,cancel
+yes finalize,confirm
+thanks bye,goodbye
+yes finalize,confirm
+when can i come,get_slots
+cancel,cancel
+show me the menu,get_menu
+dont book,cancel
+give me food list,get_menu
+i want to reserve a table,reserve
+give me food list,get_menu
+okay confirm booking,confirm
+bye,goodbye
+exit,goodbye
+good evening,greet
+sure confirm it,confirm
+what time slots are available,get_slots
+book it,confirm
+never mind cancel,cancel
+hey,greet
+show available timings,get_slots
+what time slots are available,get_slots
+confirm,confirm
+show me the menu,get_menu
+do you have free slots,get_slots
+hello,greet
+what time slots are available,get_slots
+what is on the menu,get_menu
+tell me your menu items,get_menu
+see you,goodbye
+book it,confirm
+show me the menu,get_menu
+do you have free slots,get_slots
+table booking for 4 people,reserve
+good morning,greet
+show me the menu,get_menu
+good morning,greet
+menu please,get_menu
+available reservation times,get_slots
+dont book,cancel
+exit,goodbye
+what dishes do you have,get_menu
+what is on the menu,get_menu
+do you have free slots,get_slots
+good morning,greet
+see you,goodbye
+when can i come,get_slots
+tell me your menu items,get_menu
+do you have free slots,get_slots
+never mind cancel,cancel
+i want dinner reservation for 8,reserve
+show available timings,get_slots
+what time slots are available,get_slots
+bye,goodbye
+what dishes do you have,get_menu
+show available timings,get_slots
+tell me available slots,get_slots
+stop booking,cancel
+good morning,greet
+what time slots are available,get_slots
+dont book,cancel
+table booking for 9 people,reserve
+bye,goodbye
+what is on the menu,get_menu
+bye,goodbye
+confirm,confirm
+what time slots are available,get_slots
+goodbye,goodbye
+hi,greet
+what time slots are available,get_slots
+can you book a table for 4 people,reserve
+good evening,greet
+can you book a table for 7 people,reserve
+cancel reservation,cancel
+yes finalize,confirm
+good morning,greet
+hey,greet
+goodbye,goodbye
+never mind cancel,cancel
+table booking for 6 people,reserve
+no cancel,cancel
+tell me your menu items,get_menu
+cancel,cancel
+book it,confirm
+reserve a table for 6,reserve
+good morning,greet
+okay confirm booking,confirm
+never mind cancel,cancel
+i want dinner reservation for 6,reserve
+yes confirm,confirm
+cancel,cancel
+cancel,cancel
+okay confirm booking,confirm
+cancel,cancel
+show available timings,get_slots
+no cancel,cancel
+stop booking,cancel
+tell me available slots,get_slots
+available reservation times,get_slots
+thanks bye,goodbye
+table booking for 4 people,reserve
+show available timings,get_slots
+show available timings,get_slots
+book it,confirm
+i want dinner reservation for 2,reserve
+available reservation times,get_slots
+yes finalize,confirm
+tell me your menu items,get_menu
+reserve a table for 5,reserve
+see you,goodbye
+cancel reservation,cancel
+cancel reservation,cancel
+do you have free slots,get_slots
+good morning,greet
+table booking for 7 people,reserve
+goodbye,goodbye
+never mind cancel,cancel
+give me food list,get_menu
+do you have free slots,get_slots
+stop booking,cancel
+bye,goodbye
+book seat for 10 guests,reserve
+what is on the menu,get_menu
+goodbye,goodbye
+thanks bye,goodbye
+can you book a table for 2 people,reserve
+i want to reserve a table,reserve
+table booking for 2 people,reserve
+bye,goodbye
+hi,greet
+see you,goodbye
+never mind cancel,cancel
+show available timings,get_slots
+no cancel,cancel
+book a table,reserve
+hey,greet
+good morning,greet
+i want dinner reservation for 6,reserve
+bye,goodbye
+tell me your menu items,get_menu
+cancel reservation,cancel
+i need a table for 4 persons,reserve
+cancel,cancel
+okay confirm booking,confirm
+cancel,cancel
+book a table,reserve
+good evening,greet
+do you have free slots,get_slots
+exit,goodbye
+thanks bye,goodbye
+when can i come,get_slots
+book seat for 6 guests,reserve
+exit,goodbye
+hi,greet
+book it,confirm
+i need a table for 6 persons,reserve
+never mind cancel,cancel
+stop booking,cancel
+cancel,cancel
+hi,greet
+what is on the menu,get_menu
+thanks bye,goodbye
+see you,goodbye
+hello,greet
+book a table,reserve
+give me food list,get_menu
+yes finalize,confirm
+bye,goodbye
+show me the menu,get_menu
+hi,greet
+tell me available slots,get_slots
+reserve a table for 6,reserve
+what dishes do you have,get_menu
+book it,confirm
+cancel reservation,cancel
+do you have free slots,get_slots
+when can i come,get_slots
+never mind cancel,cancel
+see you,goodbye
+yes finalize,confirm
+cancel,cancel
+book it,confirm
+i want dinner reservation for 6,reserve
+can you book a table for 8 people,reserve
+can you book a table for 3 people,reserve
+show me the menu,get_menu
+what is on the menu,get_menu
+good morning,greet
+table booking for 5 people,reserve
+never mind cancel,cancel
+what dishes do you have,get_menu
+no cancel,cancel
+goodbye,goodbye
+confirm,confirm
+when can i come,get_slots
+exit,goodbye
+goodbye,goodbye
+good evening,greet
+what dishes do you have,get_menu
+reserve a table for 2,reserve
+what dishes do you have,get_menu
+can you book a table for 2 people,reserve
+good evening,greet
+what is on the menu,get_menu
+never mind cancel,cancel
+tell me available slots,get_slots
+good evening,greet
+yes finalize,confirm
+exit,goodbye
+i want to reserve a table,reserve
+i need a table for 1 persons,reserve
+cancel reservation,cancel
+book a table,reserve
+hi,greet
+hi,greet
+book seat for 7 guests,reserve
+what time slots are available,get_slots
+menu please,get_menu
+book seat for 10 guests,reserve
+tell me available slots,get_slots
+good morning,greet
+menu please,get_menu
+yes confirm,confirm
+hey,greet
+sure confirm it,confirm
+what dishes do you have,get_menu
+when can i come,get_slots
+what time slots are available,get_slots
+never mind cancel,cancel
+what is on the menu,get_menu
+show available timings,get_slots
+what time slots are available,get_slots
+give me food list,get_menu
+available reservation times,get_slots
+goodbye,goodbye
+good morning,greet
+i want to reserve a table,reserve
+can you book a table for 8 people,reserve
+stop booking,cancel
+book a table,reserve
+never mind cancel,cancel
+hi,greet
+cancel reservation,cancel
+tell me available slots,get_slots
+give me food list,get_menu
+i want dinner reservation for 5,reserve
+goodbye,goodbye
+exit,goodbye
+yes finalize,confirm
+yes finalize,confirm
+good evening,greet
+good evening,greet
+i need a table for 1 persons,reserve
+good morning,greet
+good morning,greet
+goodbye,goodbye
+give me food list,get_menu
+confirm,confirm
+confirm,confirm
+goodbye,goodbye
+book it,confirm
+when can i come,get_slots
+see you,goodbye
+what dishes do you have,get_menu
+goodbye,goodbye
+never mind cancel,cancel
+cancel,cancel
+what dishes do you have,get_menu
+good morning,greet
+bye,goodbye
+cancel reservation,cancel
+book seat for 3 guests,reserve
+what time slots are available,get_slots
+see you,goodbye
+when can i come,get_slots
+cancel reservation,cancel
+do you have free slots,get_slots
+goodbye,goodbye
+book it,confirm
+tell me available slots,get_slots
+bye,goodbye
+exit,goodbye
+tell me your menu items,get_menu
+show available timings,get_slots
+never mind cancel,cancel
+see you,goodbye
+tell me available slots,get_slots
+cancel,cancel
+no cancel,cancel
+exit,goodbye
+goodbye,goodbye
+do you have free slots,get_slots
+hi,greet
+book it,confirm
+bye,goodbye
+what dishes do you have,get_menu
+bye,goodbye
+show me the menu,get_menu
+give me food list,get_menu
+goodbye,goodbye
+reserve a table for 7,reserve
+book it,confirm
+never mind cancel,cancel
+never mind cancel,cancel
+what is on the menu,get_menu
+give me food list,get_menu
+okay confirm booking,confirm
+good evening,greet
+can you book a table for 5 people,reserve
+tell me available slots,get_slots
+menu please,get_menu
+see you,goodbye
+yes finalize,confirm
+okay confirm booking,confirm
+hello,greet
+available reservation times,get_slots
+what is on the menu,get_menu
+dont book,cancel
+book a table,reserve
+good morning,greet
+bye,goodbye
+show me the menu,get_menu
+give me food list,get_menu
+show available timings,get_slots
+do you have free slots,get_slots
+okay confirm booking,confirm
+can you book a table for 10 people,reserve
+sure confirm it,confirm
+yes confirm,confirm
+thanks bye,goodbye
+good morning,greet
+when can i come,get_slots
+stop booking,cancel
+table booking for 1 people,reserve
+what time slots are available,get_slots
+exit,goodbye
+see you,goodbye
+see you,goodbye
+table booking for 6 people,reserve
+when can i come,get_slots
+sure confirm it,confirm
+when can i come,get_slots
+dont book,cancel
+book a table,reserve
+tell me your menu items,get_menu
+what time slots are available,get_slots
+okay confirm booking,confirm
+hi,greet
+tell me your menu items,get_menu
+yes finalize,confirm
+what is on the menu,get_menu
+table booking for 8 people,reserve
+good morning,greet
+good morning,greet
+yes confirm,confirm
+tell me your menu items,get_menu
+menu please,get_menu
+show available timings,get_slots
+exit,goodbye
+no cancel,cancel
+yes confirm,confirm
+when can i come,get_slots
+i want to reserve a table,reserve
+show available timings,get_slots
+menu please,get_menu
+thanks bye,goodbye
+hey,greet
+when can i come,get_slots
+tell me your menu items,get_menu
+can you book a table for 2 people,reserve
+i want dinner reservation for 9,reserve
+i want dinner reservation for 4,reserve
+dont book,cancel
+okay confirm booking,confirm
+tell me your menu items,get_menu
+what time slots are available,get_slots
+when can i come,get_slots
+i want to reserve a table,reserve
+tell me your menu items,get_menu
+when can i come,get_slots
+thanks bye,goodbye
+yes finalize,confirm
+sure confirm it,confirm
+see you,goodbye
+see you,goodbye
+cancel,cancel
+bye,goodbye
+available reservation times,get_slots
+yes finalize,confirm
+thanks bye,goodbye
+reserve a table for 6,reserve
+book a table,reserve
+hello,greet
+good evening,greet
+i want dinner reservation for 3,reserve
+sure confirm it,confirm
+i need a table for 8 persons,reserve
+dont book,cancel
+available reservation times,get_slots
+cancel,cancel
+dont book,cancel
+thanks bye,goodbye
+what is on the menu,get_menu
+hi,greet
+book seat for 10 guests,reserve
+book a table,reserve
+i need a table for 2 persons,reserve
+never mind cancel,cancel
+okay confirm booking,confirm
+good morning,greet
+hi,greet
+good morning,greet
+when can i come,get_slots
+show me the menu,get_menu
+available reservation times,get_slots
+cancel reservation,cancel
+tell me your menu items,get_menu
+sure confirm it,confirm
+bye,goodbye
+hey,greet
+never mind cancel,cancel
+available reservation times,get_slots
+see you,goodbye
+cancel,cancel
+confirm,confirm
+available reservation times,get_slots
+hello,greet
+tell me available slots,get_slots
+see you,goodbye
+show me the menu,get_menu
+menu please,get_menu
+book a table,reserve
+bye,goodbye
+yes finalize,confirm
+do you have free slots,get_slots
+no cancel,cancel
+can you book a table for 7 people,reserve
+hey,greet
+sure confirm it,confirm
+hi,greet
+table booking for 7 people,reserve
+good evening,greet
+book it,confirm
+give me food list,get_menu
+thanks bye,goodbye
+i need a table for 7 persons,reserve
+yes finalize,confirm
+can you book a table for 9 people,reserve
+hello,greet
+book a table,reserve
+bye,goodbye
+hi,greet
+hello,greet
+cancel,cancel
+book seat for 3 guests,reserve
+cancel,cancel
+goodbye,goodbye
+see you,goodbye
+bye,goodbye
+stop booking,cancel
+what dishes do you have,get_menu
+what time slots are available,get_slots
+yes confirm,confirm
+available reservation times,get_slots
+goodbye,goodbye
+never mind cancel,cancel
+yes finalize,confirm
+see you,goodbye
+yes confirm,confirm
+yes confirm,confirm
+book seat for 6 guests,reserve
+hi,greet
+bye,goodbye
+available reservation times,get_slots
+menu please,get_menu
+tell me available slots,get_slots
+show available timings,get_slots
+goodbye,goodbye
+no cancel,cancel
+thanks bye,goodbye
+hi,greet
+tell me available slots,get_slots
+table booking for 9 people,reserve
+hi,greet
+no cancel,cancel
+yes confirm,confirm
+good evening,greet
+hi,greet
+thanks bye,goodbye
+sure confirm it,confirm
+i want to reserve a table,reserve
+show available timings,get_slots
+good morning,greet
+hello,greet
+good morning,greet
+see you,goodbye
+cancel reservation,cancel
