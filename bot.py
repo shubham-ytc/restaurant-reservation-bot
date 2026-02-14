@@ -4,6 +4,10 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from word2number import w2n
 import pandas as pd
+
+# use scaledown api to compress menu 
+from menu_compressor import compressor
+
 # ------------------- NLTK Downloads -------------------
 nltk.download("punkt")
 nltk.download("averaged_perceptron_tagger")
@@ -47,7 +51,7 @@ class ImprovedReservationBot:
             ("cancel", "cancel"),
             ("no cancel", "cancel")
         ]
-
+        
         # Merge external data if provided
         if external_data:
             self.training_data = default_data + external_data
@@ -64,11 +68,7 @@ class ImprovedReservationBot:
         }
 
         # Menu Data
-        self.menu = {
-            "Starters": "Garlic Bread, Caesar Salad",
-            "Mains": "Vegetable Pasta, Margherita Pizza, Grilled Paneer",
-            "Desserts": "Chocolate Lava Cake, Fruit Salad"
-        }
+        self.menu = compressor() #the compressor will return compressed menu that passed through the provider file
 
         # Available Time Slots
         self.available_slots = ["6:00 PM", "7:00 PM", "8:30 PM", "9:00 PM"]
@@ -202,9 +202,7 @@ class ImprovedReservationBot:
             return "Hello! How can I help you today?"
 
         elif self.state["intent"] == "get_menu":
-            response = "Here is our menu:\n"
-            for category, items in self.menu.items():
-                response += f"- {category}: {items}\n"
+            response = self.menu
             return response
 
         elif self.state["intent"] == "get_slots":
