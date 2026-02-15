@@ -4,9 +4,11 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from word2number import w2n
 import pandas as pd
+from datetime import date
 
 # use scaledown api to compress menu 
 from menu_compressor import compressor
+from booking_db import insert_booking
 
 # ------------------- NLTK Downloads -------------------
 nltk.download("punkt")
@@ -25,39 +27,8 @@ def load_training_data_from_csv(file_path):
 class ImprovedReservationBot:
     def __init__(self, external_data=None):
 
-        self.lemmatizer = WordNetLemmatizer()
-
-        # Default Training Data
-        default_data = [
-            ("book a table", "reserve"),
-            ("make a reservation", "reserve"),
-            ("i want to make a reservation", "reserve"),
-            ("i need a table", "reserve"),
-
-            ("menu", "get_menu"),
-            ("what is on the menu", "get_menu"),
-            ("give me the menu", "get_menu"),
-
-            ("time slot", "get_slots"),
-            ("what time slots are available", "get_slots"),
-            ("show me available timings", "get_slots"),
-
-            ("hi", "greet"),
-            ("hello", "greet"),
-            ("goodbye", "goodbye"),
-
-            ("confirm", "confirm"),
-            ("yes confirm", "confirm"),
-            ("cancel", "cancel"),
-            ("no cancel", "cancel")
-        ]
-        
-        # Merge external data if provided
-        if external_data:
-            self.training_data = default_data + external_data
-        else:
-            self.training_data = default_data
-
+        self.lemmatizer = WordNetLemmatizer()                
+        self.training_data = external_data
         # State Tracker
         self.state = {
             "intent": None,
@@ -136,6 +107,14 @@ class ImprovedReservationBot:
 
     # ------------------- UPDATE STATE -------------------
     def update_state(self, text):
+        # Predict Intent
+        current_intent = self.classifier.classify(self._get_features(text))
+
+        #exception for menu and time slots 
+        if (current_intent == "get_menu" or current_intent == "get_slots"):
+            self.state["intent"]= current_intent 
+            return
+
 
         # If bot is waiting for confirmation, don't run intent classifier
         if self.state["awaiting_confirmation"]:
@@ -156,9 +135,6 @@ class ImprovedReservationBot:
                 # Still waiting
                 self.state["intent"] = "confirm_wait"
                 return
-
-        # Predict Intent
-        current_intent = self.classifier.classify(self._get_features(text))
 
         # Keep reservation intent stable
         if self.state["intent"] is None:
@@ -195,11 +171,12 @@ class ImprovedReservationBot:
         if all(self.state["slots"].values()):
             self.state["awaiting_confirmation"] = True
 
+        # self.state["intent"]= self.classifier.classify(self._get_features(text))
     # ------------------- BOT RESPONSE -------------------
-    def get_response(self):
-
+    def get_response(self,text):
+        self.update_state(text)
         if self.state["intent"] == "greet":
-            return "Hello! How can I help you today?"
+            return "Hello! How can I help you today? Can I help you to book a table?"
 
         elif self.state["intent"] == "get_menu":
             response = self.menu
@@ -229,7 +206,9 @@ class ImprovedReservationBot:
         elif self.state["intent"] == "confirm":
             slots = self.state["slots"]
             msg = f"✅ Booking Confirmed! Table booked for {slots['party_size']} people at {slots['time']}."
+            insert_booking(slots['time'],date.today(),slots["party_size"])
             self.reset_booking()
+
             return msg
 
         elif self.state["intent"] == "cancel":
@@ -244,10 +223,10 @@ class ImprovedReservationBot:
 
 # ------------------- RUN CHATBOT -------------------
 # Load dataset CSV
-csv_data = load_training_data_from_csv("reservation_dataset_1000.csv")
+# csv_data = load_training_data_from_csv("reservation_dataset_1000.csv")
 
 # Pass into bot training
-bot = ImprovedReservationBot(external_data=csv_data)
+# bot = ImprovedReservationBot(external_data=csv_data)
 
 # print("Bot: Hello! I can help you reserve a table, show menu, or available slots.\n")
 
@@ -255,3 +234,8 @@ bot = ImprovedReservationBot(external_data=csv_data)
 #     user = input("You: ")
 #     bot.update_state(user)
 #     print("Bot:", bot.get_response())
+
+# while True:
+#     user = input("You: ")
+#     print(bot.get_response(user))
+

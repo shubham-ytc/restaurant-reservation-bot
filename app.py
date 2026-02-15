@@ -12,15 +12,15 @@ CORS(app)
 csv_data = load_training_data_from_csv("reservation_dataset_1000.csv")
 bot = ImprovedReservationBot(external_data=csv_data)
 
-print("✅ Bot trained and ready!")
+print("Bot trained and ready!")
 
 # ---------------- Chat API Route ----------------
 @app.route("/chat", methods=["POST"])
 def chat():
     user_message = request.json.get("message")
 
-    bot.update_state(user_message)
-    response = bot.get_response()
+    # bot.update_state(user_message)
+    response = bot.get_response(user_message)
 
     return jsonify({"reply": response})
 
